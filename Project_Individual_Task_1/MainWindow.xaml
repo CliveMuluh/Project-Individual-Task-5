@@ -1,0 +1,239 @@
+﻿<Window x:Class="Project_Individual_Task_1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="MainWindow" 
+        Height="450"
+        Width="800">
+			
+    
+        <!--Defining the various grid columns 0|1|2-->
+        <Grid.ColumnDefinitions>
+           
+			<ColumnDefinition Width="*" />
+            <ColumnDefinition Width="3" />
+            <ColumnDefinition Width="*" />
+			
+        </Grid.ColumnDefinitions>
+		
+		<!--GRID CONTAINING BUTTON WITH IMAGE-->
+
+	
+	
+		
+        <!--- COLUMN 0 -->
+
+	
+        <Grid Grid.Column="0" Grid.ColumnSpan="3" Margin="0,0,4,0">
+
+
+
+            <TreeView>
+
+                <StackPanel>
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="8,14,0,0" Name="textBox1" VerticalAlignment="Top" Width="127" IsEnabled="True" TextOptions.TextRenderingMode="ClearType" Text="dsfd"/>
+                    <Button Height="25" Margin="150,14,0,0" Name="button1" VerticalAlignment="Top" HorizontalAlignment="Left" Width="76" Click="button1_Click">Add Item</Button>
+                    <Button Height="25" Margin="150,14,0,0" Name="button2" VerticalAlignment="Top" HorizontalAlignment="Left" Width="76" Click="button2_Click">Save Items</Button>
+
+                    <TreeView Margin="13,20,0,15" Name="TreeView1" HorizontalAlignment="Left" Width="194" Height="200" >
+                        <TreeViewItem Header="Muluh" >
+                        </TreeViewItem>
+                       
+				</TreeView>
+                </StackPanel>
+
+
+                <TreeViewItem Header="Ay's Colection" IsExpanded="True">
+                    <TreeViewItem Header="news collection" IsExpanded="True">
+                        <TreeViewItem Header="CNN feeds">
+
+
+                        </TreeViewItem>
+                        <TreeViewItem Header="Huffington feeds">
+
+
+                        </TreeViewItem>
+
+                    </TreeViewItem>
+
+                    <TreeViewItem Header="blogs Collection" IsExpanded="True">
+
+                        <TreeViewItem Header="My Blogs" IsExpanded="True">
+
+                            <TreeViewItem Header="Blog -1 ">
+
+
+
+                            </TreeViewItem>
+                            <TreeViewItem Header="Blog -2">
+
+
+
+                            </TreeViewItem>
+
+
+                        </TreeViewItem>
+                        <TreeViewItem Header="Friends' Blog">
+
+
+                        </TreeViewItem>
+
+
+                    </TreeViewItem>
+                    <TreeViewItem Header="Others" IsExpanded="True">
+
+                        <TreeViewItem Header="my schools">
+                            <TreeViewItem Header="WSU" IsExpanded="True">
+                                
+
+                            </TreeViewItem>
+
+
+                        </TreeViewItem>
+
+                    </TreeViewItem>
+
+
+
+            
+		</Grid>        
+
+                
+	<GridSplitter Grid.Column="2" Width="3" HorizontalAlignment="Center" Grid.ColumnSpan="1"  />
+		
+		
+
+    
+	
+
+        <!--- COLUMN 2 -->
+
+
+
+			<FlowDocumentPageViewer Grid.Row="1" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" Height="auto" >
+				<FlowDocument>
+					<Table FontSize="10">
+						<TableRowGroup>
+							<TableRow>
+								<TableCell Background="Gray">
+									<Paragraph>
+										Title
+									</Paragraph>
+
+								</TableCell>
+
+								<TableCell Background="Gray">
+									<Paragraph >
+										Date
+									</Paragraph>
+
+								</TableCell>
+
+							</TableRow>
+
+							<TableRow>
+								<TableCell >
+									<Paragraph Foreground="Blue " TextDecorations="Underline" TextAlignment="Justify">
+										Tesla Develops Brand new ...
+									</Paragraph>
+
+								</TableCell>
+
+								<TableCell >
+									<Paragraph Foreground="Blue " TextDecorations="Underline" >
+										Dec 3 2012 4:14 PM
+									</Paragraph>
+
+								</TableCell>
+
+							</TableRow>
+							<TableRow>
+								<TableCell >
+									<Paragraph Foreground="Blue " TextDecorations="Underline" TextAlignment="Justify">
+										Messi to win the next Ballon dor
+									</Paragraph>
+
+								</TableCell>
+
+								<TableCell >
+									<Paragraph Foreground="Blue " TextDecorations="Underline"  >
+										Dec 3 2012 4:14 PM
+									</Paragraph>
+
+								</TableCell>
+
+							</TableRow>
+
+							<TableRow>
+								<TableCell >
+									<Paragraph Foreground="Blue " TextDecorations="Underline" TextAlignment="Justify">
+										This assignment was so hard an assignment
+									</Paragraph>
+
+								</TableCell>
+
+								<TableCell >
+									<Paragraph Foreground="Blue " TextDecorations="Underline" >
+										January 2022 4:14 PM
+									</Paragraph>
+
+								</TableCell>
+
+
+							</TableRow>
+							<TableRow>
+								<TableCell >
+									<Paragraph Foreground="Blue " TextDecorations="Underline" TextAlignment="Justify">
+										This assignment was so hard an assignment
+									</Paragraph>
+
+								</TableCell>
+
+								<TableCell >
+									<Paragraph Foreground="Blue " TextDecorations="Underline" >
+										January 2022 4:14 PM
+									</Paragraph>
+
+								</TableCell>
+
+
+							</TableRow>
+
+						</TableRowGroup>
+					</Table>
+
+					<Section LineHeight="10" ScrollBar.Scroll="Section_Scroll" FontSize="10">
+
+						<Section>
+							<Paragraph FontFamily="nexa" FontStyle="Italic" FontSize="20" Background="CadetBlue" Foreground="White">
+								The School of Electrical Engineering and Computer Science
+							</Paragraph>
+						</Section>
+
+						<Section>
+							<Paragraph TextDecorations="Underline" Foreground="Blue">
+								Home
+							</Paragraph>
+						</Section>
+						<Section>
+							<Paragraph FontSize="20" FontStretch="UltraExpanded" Background="Beige" Foreground="DarkRed">
+								The 2012 Fall Senior Design Poster Session and Stendet Forum Highlights
+							</Paragraph>
+						</Section>
+						<Paragraph FontSize="10" FlowDirection="LeftToRight">
+							The School Of Electrical Engineering and Computer Science
+							The 2012 Fall Senior Poster Session and Student Forum Highlights
+My name is Muluh Clive Muluh and this my UI rendering for. I am just messing around with some features</Paragraph>
+
+						</Section>
+							
+                         </FlowDocument>
+                             
+                     </FlowDocumentPageViewer>
+						
+				
+
+
+</Window>
